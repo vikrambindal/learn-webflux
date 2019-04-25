@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class AuthorRepositoryInMemoryImpl implements AuthorRepository {
+public class InMemoryAuthorRespositoryImpl implements AuthorRepository {
 
     private static long i = 0;
-    private List<Author> authors = new ArrayList<>();
+    public static List<Author> authors = new ArrayList<>();
     {
         authors.add(new Author( ++i, "Dan Brows", "USA"));
         authors.add(new Author( ++i, "Chetan Bhagat", "India"));
